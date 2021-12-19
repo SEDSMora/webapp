@@ -1,0 +1,339 @@
+/*--------------------------------------------------------------
+# Header Section
+--------------------------------------------------------------*/
+#header {
+    z-index: 1;
+    background-color: #f1f1f1;
+    padding: 5px 10px 0px;
+    color: black;
+    text-align: center;
+    font-size: 5px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.3s;
+}
+
+#header-logo {
+    transition: 0.3s;
+}
+
+/*--------------------------------------------------------------
+  # Body
+  --------------------------------------------------------------*/
+body {
+    font-family: 'Inter';
+}
+
+/*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    position: relative;
+    background: url("../Assests/bg2.jpg") center bottom no-repeat;
+    background-size: cover;
+    /* padding: 200px 0 120px 0; */
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 991px) {
+    #hero {
+        padding: 240px 0 60px 0;
+    }
+}
+
+@media (max-width: 574px) {
+    #hero {
+        padding: 200px 0 20px 0;
+    }
+}
+
+.title {
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.detail-row {
+    background: #6e2859cb;
+    width: 100%;
+    padding: 40px 40px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.event-title {
+    color: #fcfcfc;
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.event-caption {
+    color: yellow;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.event-description {
+    font-size: 15pt;
+    text-align: center;
+    color: #ffffff;
+}
+
+@media (max-width: 400px) {
+    .detail-row {
+        padding: 40px 20px;
+    }
+}
+
+/*--------------------------------------------------------------
+  # Countdown
+  --------------------------------------------------------------*/
+
+.time-card2 {
+    color: #ffffff;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.o-button {
+    width: 150px;
+    height: 150px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 4em;
+    border: 3px solid white;
+    border-radius: 100%;
+    /* background: #d6d5dfa0; */
+    background: transparent;
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+/*--------------------------------------------------------------
+  # Action Button - JoinLink
+  --------------------------------------------------------------*/
+
+.button-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#button-link {
+    height: 70px;
+    width: 30%;
+    border: 3px solid #750848;
+    text-transform: uppercase;
+    margin: 20px 20px 0px 20px;
+    cursor: pointer;
+    background-color: #ddbace;
+    border-radius: 10px;
+    box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.212);
+    color: #750848;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* #button-link {
+    color: #750848;
+    text-decoration: none;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all .45s ease-Out;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: bold;
+  
+  } */
+
+#circle {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #c6ffff;
+    position: absolute;
+    transition: all .3s ease-Out;
+    top: 20px;
+    left: 70px;
+}
+
+/* #button-link:hover #circle {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+  } */
+
+#button-link:hover {
+    background-color: #750848;
+    color: white;
+}
+
+#button-link:disabled {
+    color: #bd6699;
+    border: 3px solid #bd6699;
+}
+
+#button-link:disabled:hover {
+    background-color: #ddbace;
+    border: 3px solid #750848;
+    color: #bd6699;
+    cursor: not-allowed;
+}
+
+/* #button-link:hover a {
+    color: white;
+  } */
+
+@media (max-width: 1100px) {
+    #button-link {
+        width: 50%;
+    }
+}
+
+@media (max-width: 770px) {
+    #button-link {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    #button-link {
+        height: 80px;
+        width: 90%;
+    }
+}
+
+/*--------------------------------------------------------------
+  # Banner Area
+  --------------------------------------------------------------*/
+.banner-area {
+    width: 50%;
+    /* border-radius: 20px; */
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.banner-img {
+    width: 100%;
+    /* border-radius: 20px; */
+}
+
+@media (max-width: 1100px) {
+    .banner-area {
+        width: 70%;
+    }
+}
+
+@media (max-width: 770px) {
+    .banner-area {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner-area {
+        width: 95%;
+    }
+}
+
+/*--------------------------------------------------------------
+  # About - Card
+  --------------------------------------------------------------*/
+
+.card {
+    border: none;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Inter';
+}
+
+.line {
+    border-top: 1px solid rgba(139, 138, 138, 0.466);
+    margin-top: 60px;
+}
+
+.about-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #750848;
+
+}
+
+.body-text {
+    margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+  # Social Media Buttons - FontAwesome icons
+  --------------------------------------------------------------*/
+.btn.btn-social-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    color: cornsilk;
+}
+
+.social-icons>.btn {
+    margin-right: 0.5rem !important
+}
+
+.social-icons #social-link,
+.social-icons #social-link:visited {
+    color: #ffffff;
+    padding: 15px;
+}
+
+.social-icons #social-link:hover,
+#social-link:focus {
+    /* color: #0c1f49; */
+    color: #750848;
+}
+
+.social-icons {
+    margin-top: 0.5rem !important
+}
+
+.social-icons>.btn:hover,
+.btn:focus {
+    background: #ffffff;
+    /* color: #0c1f49; */
+    color: #750848;
+}
+
+.btn.btn-rounded {
+    border-radius: 50px;
+}
