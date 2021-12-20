@@ -3,7 +3,7 @@
 
 <head>
     <!-- TITLE -->
-    <title>SEDS MORA - PathFinder</title>
+    <title>SEDS MORA - Evolution of Telescopes</title>
 
     <!-- META -->
     <!-- <meta http-equiv="refresh" content="0;url=404.html" /> -->
@@ -11,8 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta property="og:title" content="Searching for Black Holes in Our Galaxy" />
-    <meta property="og:description" content="PathFinder - Special Episode | Powered by SEDS Mora" />
+    <!-- CHANGE --><meta property="og:title" content="Searching for Black Holes in Our Galaxy" />
+    <meta property="og:description" content="Evolution of Telescopes - Webinar | Powered by SEDS Mora" />
     <meta property="og:image" content="/meta2.jpeg" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sedsmoraonline.web.app/james-web.html" />
@@ -42,26 +42,32 @@
 
         <!-- ======= Hero Section ======= -->
         <section id="hero" class="clearfix" style="padding: 150px 5px 50px">
-            <div class="container text-center">
 
+            <video autoplay muted loop id="myVideo">
+                <source src="./Assests/JWST.mp4" type="video/mp4">
+                <!-- Resources: https://jwst.nasa.gov/content/multimedia/videos.html -->
+            </video>
+
+            <div class="container text-center">
                 <!-- Event Details -->
                 <div class="hero-info">
                     <h2>
-                        <span class="title">𝐏𝐚𝐭𝐡𝐅𝐢𝐧𝐝𝐞𝐫 | 𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐄𝐩𝐢𝐬𝐨𝐝𝐞</span>
+                        <span class="title">𝐄𝐯𝐨𝐥𝐮𝐭𝐢𝐨𝐧 𝐨𝐟 𝐓𝐞𝐥𝐞𝐬𝐜𝐨𝐩𝐞𝐬 | 𝐖𝐞𝐛𝐢𝐧𝐚𝐫</span>
                     </h2>
 
                     <div class="detail-row">
                         <h3>
-                            <span class="event-title"> Searching for Black Holes in Our Galaxy </span>
+                            <!-- CHANGE --><span class="event-title"> Searching for Black Holes in Our Galaxy </span>
                         </h3>
 
                         <h4>
                             <i>
-                                <span class="event-caption"> "Journey to the World of the Unknown" </span>
+                                <!-- CHANGE --><span class="event-caption"> "Journey to the World of the Unknown" </span>
                             </i>
                         </h4>
 
                         <p class="event-description">
+                            <!-- CHANGE -->
                             SEDSMora brings you a special episode on 𝐏𝐚𝐭𝐡𝐅𝐢𝐧𝐝𝐞𝐫 unleashing the groundbreaking
                             discoveries
                             about Blackholes.
@@ -73,7 +79,7 @@
                             Mr. Tharindu Jayasinghe,
                             Astronomer,
                             Ohio State University
-                            <br><br> 🗓️ 𝐃𝐚𝐭𝐞 : 16<sup>th</sup> October 2021
+                            <br><br> 🗓️ 𝐃𝐚𝐭𝐞 : 22<sup>nd</sup> December 2021
                             <br> ⏰ 𝐓𝐢𝐦𝐞 : 7.00 PM Onwards
                             <br> 💻 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : Zoom
                         </p>
@@ -114,12 +120,24 @@
 
         <!-- End Hero Section -->
 
+        
+            
+            <!-- ======= Join Button ======= -->
+            <div class="button-area">
+                <button type="button" id="button-link" onclick="link()">
+                    <!-- <div id="circle"></div> -->
+                    <!-- <a href="https://www.facebook.com/" target="_blank">
+                    <span id="link-text"></span>
+                    </a> -->
+                    <span id="link-text"></span>
+                </button>
+            </div>
+        
         <div style="margin-top:50px;padding:15px 15px;">
-
             <!-- ======= Flyer ======= -->
             <!-- <div class="container px-10  text-center" id="flyer">
-        <img src="./Assests/post1.jpg" class="img-fluid banner-img" alt="Event Flyer">
-      </div> -->
+            <img src="./Assests/post1.jpg" class="img-fluid banner-img" alt="Event Flyer">
+            </div> -->
 
             <div class="container px-10  text-center d-flex justify-content-center">
                 <div id="carouselExampleSlidesOnly" class="  carousel slide banner-area " data-bs-ride="carousel">
@@ -132,18 +150,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-            <!-- ======= Join Button ======= -->
-            <div class="button-area">
-                <button type="button" id="button-link" onclick="link()">
-                    <!-- <div id="circle"></div> -->
-                    <!-- <a href="https://www.facebook.com/" target="_blank">
-            <span id="link-text"></span>
-          </a> -->
-                    <span id="link-text"></span>
-                </button>
             </div>
 
             <!-- ======= About Section ======= -->
@@ -184,7 +190,7 @@
     </main>
 
     <!-- ======= Footer ======= -->
-    <footer class="text-center text-lg-start" style="background-color: #750848;">
+    <footer class="text-center text-lg-start" style="background-color: #e5c519;">
         <div class="container text-center p-1">
             <div class="social-icons">
                 <button type="button" class="btn btn-social-icon btn-dribbble btn-rounded">
@@ -227,7 +233,7 @@
         </div>
 
         <!-- Copyright Note-->
-        <div class="text-center text-white p-1">
+        <div class="text-center text-body p-1">
             <p class="ui-section-footer--copyright ui-text-note text-center"><small>&copy;2021 SEDS Mora | University of
                     Moratuwa. <br> All Rights Reserved.</small></p>
         </div>

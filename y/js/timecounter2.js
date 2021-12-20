@@ -4,7 +4,7 @@ const second = 1000,
   day = hour * 24;
 
 var counterState = "collapsed";
-let countDown = new Date("Oct 16 , 2021 18:55:00").getTime(),
+let countDown = new Date("Dec 22 , 2021 18:55:00").getTime(),
   x = setInterval(function () {
     let now = new Date().getTime(),
       distance = countDown - now;
