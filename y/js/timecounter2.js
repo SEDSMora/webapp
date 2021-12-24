@@ -60,5 +60,5 @@ let countDown = new Date("Dec 22 , 2021 18:55:00").getTime(),
   }, second);
 
 function link() {
-  window.open("https://udenver.zoom.us/j/81582596274", "_blank");
+  window.open("https://udenver.zoom.us/j/82947584906", "_blank");
 }
